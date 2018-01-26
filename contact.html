@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>index.html</title>
+    <title>contact.html</title>
     
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -14,82 +14,69 @@
 </head>
 <body>  
     <!--Navbar-->
-    <nav class="navbar">
-        <div class="container">
+    <nav class="navbar navbar-default">
+        <div class="container">      
             <div class="navbar-header">
-                <a class="navbar-brand" href="index.html"><h1>Michael Gamatero</h1></a>
+              <a href="index.html"><h1>Michael Gamatero</h1></a>
             </div>
-                       
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="nav-item"><a href="index.html">About</a></li>
-                    <li class="nav-item"><a href="portfolio.html">Portfolio</a></li>
-                    <li class="nav-item"><a href="contact.html">Contact</a></li>
+                <ul class="navbar-nav ml-auto">
+                    <li><a class="nav-link" href="index.html">About</a></li>
+                    <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                    <li><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
-            </div>
-        </div>
-    </nav>
+        </div>         
+    </nav> <!--end navbar-->
 
 
-    
-    <main class="container-fluid">
-        <div class="row">
-            <section class="col-md-8 col-sm-12 col-xs-12 contact">
-                <h3>Contact</h3>
-                <hr>
-                    <form action="#">
-                        <div class="contact_text_and_input">
-                            Name<br>
-                            <input id="contact_name_input" type="text" placeholder="John Smith"><br>
-                        </div>
-                        <div class="contact_text_and_input">
-                            Email<br>
-                            <input id="contact_email_input" type="email" name="email" placeholder="example@gmail.com"><br>
-                        </div>
-                        <div class="contact_text_and_input">
-                            <div id="contact_message"></div>
-                                Message<br>
-                                <input id="contact_message_box" type="text" name="message"><br>
-                        </div>                            
-                        <input type="submit" value="Submit">
-                    </form>
-                    
-            </section>
-                      
-            <aside class="col-md-4 col-sm-12 col-xs-12">
-                <h3>Connect with Me</h3>
-                <hr>
-                <a href="http://www.github.com" target="_blank"><img src="assets/images/GitHub.jpg"></a>
-                <a href="http://www.linkedin.com" target="_blank"><img src="assets/images/linkedin.jpg"></a>
-                <a href="http://www.stackoverflow.com" target="_blank"><img src="assets/images/StackOverflow.jpg"></a>
-            </aside>
-        </div>  <!-- End About Me and Aside Row  -->
-            
-        <!-- Footer Start -->
-        <div class="row">
-            <footer class="col-md-12 col-sm-12 col-xs 12">
-                    <div class="navbar navbar-default navbar-fixed-bottom">
-                            <div class="container text-centr">
-                              <span class="navbar-text">
-                                <p>@ Copyright Michael Gamatero 2018</p>
-                              </span>
+    <main class="container">        
+        <div class="row justify-content-center">
+            <section class="col-md-8 col-sm-12 col-xs-12">
+                <div class="contact">
+                    <h3>Contact</h3>
+                    <hr>
+                    <form>
+                            
+                            <div class="form-group">
+                                <label for="exampleInputName">Name</label>
+                                <input type="password" class="form-control" id="exampleInputName" placeholder="John Smith">
                             </div>
-                    </div> 
-            </footer>
-        </div>  
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@gmail.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputMessage">Message</label>
+                                <textarea name="career[message]" class="form-control" id="exampleInputMessage"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-sm" id="message_contact_button">Submit</button>
+                          </form> 
+                </div> <!-- Close contact-->
+            </section>
+            
+                        
+            <section class="col-md-4 col-sm-12 col-xs-12">
+                <div class="aside">
+                    <h3>Connect with Me</h3>
+                    <hr>
+                    <a href="http://www.github.com" target="_blank"><img src="assets/images/github.jpg"></a>
+                    <a href="http://www.linkedin.com" target="_blank"><img src="assets/images/linkedin.jpg"></a>
+                    <a href="http://www.stackoverflow.com" target="_blank"><img src="assets/images/stackoverflow.jpg"></a>
+                </div> <!-- Close aside-->
+            </section>
+        </div>  <!-- End contact and Aside Row  -->
+        
+
+    </main>  <!-- End Main  -->
+
+    <!-- Footer Start -->
+    <footer class="footer">
+                <div class="container-fluid">
+                        <div class="container text-center">
+                            <span>@ Copyright Michael Gamatero 2018</span>
+                        </div>
+                </div> 
+    </footer>
  <!-- Footer End -->
-
-    </div>
-
-    </main>
-
-   
-
-
-</div>    
-
-
-
-
 
 
  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
